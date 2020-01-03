@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 读取jdbc.properties -->
+    <properties resource="jdbc.properties"/>
+
+    <!--1.别名扫描 -->
+    <typeAliases>
+        <package name="com.yiidian.domain"/>
+    </typeAliases>
+
+    <!--2.数据库连接 -->
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="jdbc"></transactionManager>
+            <dataSource type="pooled">
+                <property name="url" value="${jdbc.url}"/>
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--3.映射关联 -->
+    <mappers>
+        <package name="com.yiidian.dao"/>
+    </mappers>
+
+</configuration>
