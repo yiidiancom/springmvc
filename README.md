@@ -17,7 +17,7 @@
 
 # 学习大纲
 
-Spring MVC基础入门
+## Spring MVC基础入门
 
 什么是MVC
 
@@ -33,7 +33,7 @@ Spring MVC 核心源码分析
 
 @RequestMapping注解
 
-Spring MVC请求参数封装
+## Spring MVC请求参数封装
 
 Spring MVC 基本类型封装
 
@@ -57,7 +57,7 @@ Spring MVC 使用Servlet API
 
 @CookieValue注解
 
-Spring MVC JSON转换与RESTful风格开发
+## Spring MVC JSON转换与RESTful风格开发
 
 Spring MVC 静态资源访问
 
@@ -77,7 +77,7 @@ Spring MVC 文件上传
 
 Spring MVC 文件下载
 
-Spring MVC拦截器与SSM整合
+## Spring MVC拦截器与SSM整合
 
 Spring MVC 拦截器
 
